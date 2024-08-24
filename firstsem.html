@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="first.css">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Notes4All</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Um Er</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Semester</a>
+                   
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>First</a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Second</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Third</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Fourth</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Fifth</a>
+                  
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Message</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0" style="width:fit-content;">
+                            <div class="form-container" style="width: 100%;align-items: center;justify-content: center;text-align: center;">
+                                <form class="form"  action="https://api.web3forms.com/submit" method="POST">
+                                  <input type="hidden" name="access_key" value="782cbae0-38a3-4d8e-88fb-68673d172e07">
+                                  <div class="form-group">
+                                    <label for="email">About yourself</label>
+                                    <input required="" name="email" id="email" type="text">
+                                  </div>
+                                  <br>
+                                  <div class="form-group">
+                                    
+                                    <textarea required="" cols="40" rows="10" id="textarea" name="textarea" >Type Message here!</textarea>
+                                  </div>
+                                  <button type="submit" class="form-submit-btn">Send</button>
+                                </form>
+                              </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">Um Er</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">Contributors</a>
+                            <a href="#" class="dropdown-item">Join Discord</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+                    
+           <div class="container" style="color: black;">
+            <div class="card" id="first" style="font-size: small; font-weight: bold;color: wheat;margin: 10px 15px;background-color: transparent;">
+                <h1 style=" font-weight: bold;color: wheat;">First Semester</h1>
+                <h2 style="font-size: small; font-weight: bold;color: wheat;">As a fresher this semester will help you to build a basic logic about computer science </h2>
+                <br>
+                <h3>This semester comprises of six basic subjects:</h3>
+                </div>
+
+                <div class="container" id="c2" style="background: transparent;">
+                    <a href="#book1">
+                    <div class="card" id="card2">
+                     <span >Maths</span>
+                    </div>
+                    </a>
+                
+                    <a href="#book2">
+                    <div class="card" id="card2">  
+                        <span>EVS</span> 
+                    </div>
+                    </a>
+                
+                    <a href="#book3">
+                    <div class="card" id="card2">
+                       <span>Drawing</span>
+                    </div>
+                </a>
+                    <a href="#book4">
+                    <div class="card" id="card2">
+                       <span>Electric</span>
+                    </div>
+                </a>
+                    <a href="#book5">
+                    <div class="card" id="card2">
+                       <span>Physics</span>
+                    </div>
+                </a>
+                    <a href="#book6">
+                    <div class="card" id="card2" style="text-align: center;font-size: 10px;">
+                       <span  style="text-align: center;font-size: 14px;">Mechanics</span>
+                    </div>
+                </a>
+
+                </div>
+                <div class="row" id="book1" style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert" style="background-color: rgb(87, 81, 81);color: white;">
+                        Mathematics!
+                      </div>
+                <div class="col col-4" >
+                    NOTES:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">
+                     
+                      <div class="paste-button">
+                        <button class="button">Unit &nbsp; ▼</button>
+                        <div class="dropdown-content">
+                          <a id="top" href="i">unit 1</a>
+                          <a id="middle" href="#">unit 2</a>
+                           <a id="middle" href="#">unit 3</a>
+                          <a id="bottom" href="#">unit 4</a>
+                        </div>
+                      </div>
+                      
+                
+                
+                    </div> 
+                    <div style="margin-top: 10px;" class="paste-button">
+                      <button class="button">Unit &nbsp; ▼</button>
+                      <div class="dropdown-content">
+                        <a id="top" href="i">unit 1</a>
+                        <a id="middle" href="#">unit 2</a>
+                         <a id="middle" href="#">unit 3</a>
+                        <a id="bottom" href="#">unit 4</a>
+                      </div>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                <div class="row" id="book2"  style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert">
+                        Evs!
+                      </div>
+                      <div class="col col-4" >
+                        NOTES:
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                        <div class="row">
+                         
+                          <div class="paste-button">
+                            <button class="button">Unit &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                              <a id="top" href="i">unit 1</a>
+                              <a id="middle" href="#">unit 2</a>
+                               <a id="middle" href="#">unit 3</a>
+                              <a id="bottom" href="#">unit 4</a>
+                            </div>
+                          </div>
+                          
+                    
+                    
+                        </div> 
+                        <div style="margin-top: 10px;" class="paste-button">
+                          <button class="button">Unit &nbsp; ▼</button>
+                          <div class="dropdown-content">
+                            <a id="top" href="i">unit 1</a>
+                            <a id="middle" href="#">unit 2</a>
+                             <a id="middle" href="#">unit 3</a>
+                            <a id="bottom" href="#">unit 4</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                <div class="row" id="book3"  style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert">
+                        Drawing!
+                      </div>
+                      <div class="col col-4" >
+                        NOTES:
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                        <div class="row">
+                         
+                          <div class="paste-button">
+                            <button class="button">Unit &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                              <a id="top" href="i">unit 1</a>
+                              <a id="middle" href="#">unit 2</a>
+                               <a id="middle" href="#">unit 3</a>
+                              <a id="bottom" href="#">unit 4</a>
+                            </div>
+                          </div>
+                          
+                    
+                    
+                        </div> 
+                        <div style="margin-top: 10px;" class="paste-button">
+                          <button class="button">Unit &nbsp; ▼</button>
+                          <div class="dropdown-content">
+                            <a id="top" href="i">unit 1</a>
+                            <a id="middle" href="#">unit 2</a>
+                             <a id="middle" href="#">unit 3</a>
+                            <a id="bottom" href="#">unit 4</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                <div class="row" id="book4"  style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert">
+                        Electric!
+                      </div>
+                      <div class="col col-4" >
+                        NOTES:
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                        <div class="row">
+                         
+                          <div class="paste-button">
+                            <button class="button">Unit &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                              <a id="top" href="i">unit 1</a>
+                              <a id="middle" href="#">unit 2</a>
+                               <a id="middle" href="#">unit 3</a>
+                              <a id="bottom" href="#">unit 4</a>
+                            </div>
+                          </div>
+                          
+                    
+                    
+                        </div> 
+                        <div style="margin-top: 10px;" class="paste-button">
+                          <button class="button">Unit &nbsp; ▼</button>
+                          <div class="dropdown-content">
+                            <a id="top" href="i">unit 1</a>
+                            <a id="middle" href="#">unit 2</a>
+                             <a id="middle" href="#">unit 3</a>
+                            <a id="bottom" href="#">unit 4</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                <div class="row" id="book5"  style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert">
+                        Physics!
+                      </div>
+                      <div class="col col-4" >
+                        NOTES:
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                        <div class="row">
+                         
+                          <div class="paste-button">
+                            <button class="button">Unit &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                              <a id="top" href="i">unit 1</a>
+                              <a id="middle" href="#">unit 2</a>
+                               <a id="middle" href="#">unit 3</a>
+                              <a id="bottom" href="#">unit 4</a>
+                            </div>
+                          </div>
+                          
+                    
+                    
+                        </div> 
+                        <div style="margin-top: 10px;" class="paste-button">
+                          <button class="button">Unit &nbsp; ▼</button>
+                          <div class="dropdown-content">
+                            <a id="top" href="i">unit 1</a>
+                            <a id="middle" href="#">unit 2</a>
+                             <a id="middle" href="#">unit 3</a>
+                            <a id="bottom" href="#">unit 4</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                <div class="row" id="book6"  style="background-color: rgb(42, 44, 46);margin-top: 10px;color: wheat;padding: 22px 3px;">
+                    <div class="alert alert-info mt-3" role="alert">
+                        Communication!
+                      </div>
+                      <div class="col col-4" >
+                        NOTES:
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                        <div class="row">
+                         
+                          <div class="paste-button">
+                            <button class="button">Unit &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                              <a id="top" href="i">unit 1</a>
+                              <a id="middle" href="#">unit 2</a>
+                               <a id="middle" href="#">unit 3</a>
+                              <a id="bottom" href="#">unit 4</a>
+                            </div>
+                          </div>
+                          
+                    
+                    
+                        </div> 
+                        <div style="margin-top: 10px;" class="paste-button">
+                          <button class="button">Unit &nbsp; ▼</button>
+                          <div class="dropdown-content">
+                            <a id="top" href="i">unit 1</a>
+                            <a id="middle" href="#">unit 2</a>
+                             <a id="middle" href="#">unit 3</a>
+                            <a id="bottom" href="#">unit 4</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                <div class="col col-4"> Books:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                <div class="col col-4"> Papers:
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
+                    <div class="row">link1</div> <br>
+                    <div class="row">link2</div>
+                </div>
+                </div>
+                
+                
+                </div>
+                                
+
+
+<br>
+
+                <div style="color: white;">Syllabus:</div>
+        <div class="container" id="c3">
+            <div class="card" id="c4" onclick="math()">
+              <p class="title">
+               Math:
+              </p>
+            </div>
+            <div class="card" id="c4" onclick="evs()">
+              <p class="title">
+               EVS
+              </p>
+            </div>
+            <div class="card" id="c4" onclick="draw()">
+              <p class="title">
+               Drawing
+              </p>
+            </div>
+          
+            <div class="card" id="c4" onclick="elec()">
+              <p class="title">
+             Electric
+              </p>
+            </div>
+            <div class="card" id="c4" onclick="phy()">
+              <p class="title">
+          Physics
+              </p>
+            </div>
+            <div class="card" id="c4" onclick="mech()" style="justify-content:start ;">
+              <p class="title" style="font-size: small;">
+            Mechanics
+              </p>
+            </div>
+          </div>
+  <br>
+          <div class="container" style="color: wheat;background-color: transparent;">
+            <h1 id="head">Subject</h1>
+            <h3 id="t1">Topic</h3>
+            <p id="s1">abcd</p>
+            <h3 id="t2">Topic</h3>
+            <p id="s2">abcd</p>
+            <h3 id="t3">Topic</h3>
+            <p id="s3">abcd</p>
+            <h3 id="t4">Topic</h3>
+            <p id="s4">abcd</p>
+        </div>
+
+           </div>
+         
+
+      
+
+       
+     
+
+<script>
+var head= document.querySelector("#head");
+
+var t1= document.querySelector("#t1");
+var t2= document.querySelector("#t2");
+var t3= document.querySelector("#t3");
+var t4= document.querySelector("#t4");
+var s1= document.querySelector("#s1");
+var s2= document.querySelector("#s2");
+var s3= document.querySelector("#s3");
+var s4= document.querySelector("#s4");
+
+
+function math(){
+    head.textContent="Mathematics";
+    t1.textContent=`Matrices:`
+    s1.textContent=`Symmetric and skew- symmetric, Hermitian, and 
+            skew-Hermitian Matrices, Orthogonal and Unitary matrices. 
+            Triangular matrices, Rank of a matrix, normal form, 
+            elementary transformations, solution of simultaneous 
+            equations by elementary operations, Cayley-Hamilton 
+            theorem, Eigen values and Eigen vectors of a matrix.`;
+    t2.textContent=`Multivariable Calculus:`
+    s2.textContent=`Differential calculus, Limits and 
+            continuity, partial derivatives of functions of severable 
+            variables, conditions for differentiability, The chain rule with 
+            one independent and with several independent variables, 
+            Implicit differentiation, Partial differentiation, homogeneous 
+            functions, and Euler's theorem.`
+
+    t3.textContent=`Taylor's and Maclaurin's series:`
+    s3.textContent=`Taylor's theorem and mean 
+            value theorem for functions of two variables, Errors and 
+            approximations, Maxima & Minima of several variables: Local 
+            maximum and minimum values, critical points, saddle points, 
+            first and second derivative Tests.`
+    t4.textContent=`Probability:`
+    s4.textContent=`Basic concepts of probability, Addition 
+            multiplication theorems on probability, Conditional 
+            Probability, Bayes theorem, Random Variable, Probability 
+            density function, Discrete and continuous distributions, 
+            Binomial, Poisson & Normal distributions.`;
+    
+   
+}
+function phy(){
+    head.textContent="Engineering Physics";
+    t1.textContent=`Vectors:`
+    s1.textContent=`cross product, Dot product and Scalar triple product 
+of vectors. Cartesian Coordinate System, Gradient, Divergence 
+and Curl in Cartesian coordinates. Curvilinear Coordinates, 
+Cylindrical and Spherical Polar Coordinates, Gradient, 
+Divergence and Curl in Curvilinear Coordinates. Vector fields, 
+Electric and magnetic fields. Dirac delta function, One 
+Dimensional and three-Dimensional Dirac Delta function and 
+its applications. Divergence of R^/R2 and its discrepancy and 
+solution.`;
+    t2.textContent=`Relativity::`
+    s2.textContent=`Concept of Ether and Michelson Morley 
+experiment, Inertial and non-inertial frame of references, 
+postulates of relativity, Galilean and Lorentz transformation 
+equations. Relativistic energy momentum relation, 
+Relativistic energy mass relation or Einstein’s energy-mass 
+relation, mass-less particles.`
+
+    t3.textContent=`Quantum Mechanics:`
+    s3.textContent=`Compton Effect, De-Broglie wave 
+hypothesis, matter waves, Uncertainty principle and its 
+applications. Wave function and its properties. Schrodinger’s 
+wave equation: time dependent and time independent 
+Schrodinger’s wave equations, energy, momentum and 
+Hamiltonian operators.`
+    t4.textContent=`Solid State Physics:`
+    s4.textContent=`Band theory of solids (metals, insulators 
+and semi-conductors), Energy band gap, Direct and Indirect 
+band gap semiconductors, Intrinsic and Extrinsic 
+semiconductors, N-type and P-type semiconductors-Charge 
+carriers and charge carrier concentration, Fermi level and Fermi energy, Drift and Resistance, Conductivity and 
+Mobility-Effect of Temperature and Doping, Hall-Effect, 
+Diffusion of carriers, Diffusion length and Diffusion constantD. Einstein’s relation and Continuity equation.`;
+    
+   
+}
+function evs(){
+    head.textContent="Environmental Science";
+    t1.textContent=`Environment and Atmosphere:`
+    s1.textContent=` Introduction, Segments of 
+Environment; Factors affecting Environment, Composition of 
+Atmosphere: particles, ions, radicals and their formation, 
+Vertical profile of atmosphere, Heat budget of earths 
+atmospheric system, Chemical and photochemical reactions in 
+atmosphere, photochemical smog formation; oxides of C, N, S 
+and their effects, Chemistry of Sun screens, ozone chemistry.
+Global effects of Air pollution: Greenhouse effect and 
+Greenhouse gases (Kyoto protocol), Global warming: causes, 
+impacts of global warming, Climate change, acid rain, ozone 
+layer depletion (Montreal Protocol).`;
+    t2.textContent=`Environment and Hydrosphere:`
+    s2.textContent=` Chemical composition of 
+water bodies: Lakes, ponds and rivers, factors determining 
+composition: Thermal stratification, acid – base and redox 
+property (pE concept), water quality parameters: Dissolved 
+oxygen, Metals, Chloride content, Phosphate, Nitrate and 
+Microorganisms, Water quality standards, Analytical methods 
+for determination of BOD, COD, DO and Metals (Ag, Cd, Hg, Pb 
+and Se), choice of method for determination`
+
+    t3.textContent=`Water and its Treatment:`
+    s3.textContent=` Hard water, Types of hardness, 
+units of hardness, methods of estimation, Treatment of hard 
+water/softening of hard water; Lime-Soda process, Zeolite 
+process and Ion Exchange process, Alkalinity of water, 
+determination of alkalinity by using Double indicator method 
+(phenolphthalein and methyl orange indicators), numerical 
+problems based on hardness, alkalinity and LS process, 
+municipal treatment of water for drinking purposes; removal of 
+suspended,dissolved and biological impurities-sterilization 
+by chlorination (Effective and break-point chlorination).`
+    t4.textContent=`Sustainable Development & Environmental Management:`
+    s4.textContent=`Energy and Environment: Energy sources – overview of 
+resources and reserves.
+Social and economic issues: Poverty, NC Saxena Panel, 
+Tendulkar Committee, Food security, food security in India, 
+challenges to food security, Sustainable Development: 
+Definition and concepts of sustainable development, 
+International initiatives towards Sustainable development, 
+Sustainable development goals; Hurdles to sustainability.
+Environmental Management Systems: ISO14000 series; 
+Environmental auditing: Environmental Impact Assessment, 
+Life cycle assessment; Human health risk assessment, issues 
+involved in enforcement of environmental legislations
+Solid waste Management: Causes, effects and control 
+measures of urban and industrial wastes. Disaster 
+management: Floods, earthquake, cyclone and landslides`;
+    
+   
+}
+function elec(){
+    head.textContent="Principles of Electrical Engineering";
+    t1.textContent=`Basics of Electrical Circuits:`
+    s1.textContent=`Review of electric circuit 
+concepts & parameters: Voltage, Current, Electric Potential, 
+Resistance, Conductance, Inductance, Capacitance, Reactance, 
+Impedance. Basic terminologies: Nodes, Junctions, Paths, 
+Loops, Branches. Series and Parallel combinations of circuits 
+parameters. Voltage and Current sources and their 
+transformation. Independent & Dependent Sources. Power 
+and energy relations. Ohm's law & its Validity, Ohmic and non 
+Ohmic conductors.
+DC Circuits: Introduction to D.C. Circuits, Voltage and Current 
+Divider Laws, Kirchhoff’s laws (KCL & KVL), Basic analysis of 
+Electrical Circuits. Derivation of Current & Voltage in an 
+Electrical Circuit.`;
+    t2.textContent=`AC Circuits:`
+    s2.textContent=`Introduction to A.C. circuits, Basic terminology 
+and definitions, Parameters, Generation of A.C. Voltage, 
+Applications. Terminologies: EMF, Mean, Average, RMS, Peak, 
+and Form Factor etc. A.C. to D.C. and D.C. to A.C. Conversion, 
+Concept of Single Phase and Three Phase Circuits. Concept 
+about Electricity distribution`
+
+    t3.textContent=`Magnetic Circuits:`
+    s3.textContent=`Magnetic Circuits: Basic terminologies: MMF, Reluctance, 
+Permeance, Magnetic field and permeability, Self and Mutual 
+Inductance, leakage flux. Faraday’s laws of electromagnetic 
+induction, Lenz’s law. Analogy between electric circuit and 
+magnetic circuits, Analysis of series and parallel magnetic 
+circuit, B-H curve, Hysteresis & Eddy current loss.
+Electrical Machines: Introduction to Machinery Principles, 
+Electrical and Mechanical Terminologies associated with 
+Electrical Machines.
+Types of Electrical Machines: Transformers, A.C. and D.C. 
+Generators & Motors. Basic Concepts & Principle of Operation, 
+Losses in Electrical Machines.`
+    t4.textContent=`Electrical Measurement:`
+    s4.textContent=`Introduction to Electrical 
+Measurement & Measuring Instruments. Measurement 
+Errors, Ammeter, Voltmeter, Wattmeter, Energy Meter.`;
+    
+   
+}
+
+function mech(){
+    head.textContent="Engineering Mechanics";
+    t1.textContent=`Basics:`
+    s1.textContent=`Basic concepts of Vectors, System of Forces, 
+CoplanarConcurrent Forces, rigid body equations, 
+Components in Space – Resultant- Moment of Forces and its 
+Application; Moment about a specific axis, Equilibrium of 
+System of Forces, Free body diagrams, simplification of force 
+moment system. Centroid and Centre of Gravity, Centroid of 
+simple figures and centroid of composite sections`;
+    t2.textContent=`Moment of Inertia:`
+    s2.textContent=`Area moment of 
+inertia, Theorems of moment of inertia, Moment of inertia of 
+standard sections and composite sections; Mass moment 
+inertia of solids, product of inertia. Friction, Types of friction,`
+
+    t3.textContent=`Trusses and beams:`
+    s3.textContent=`Analysis of screw jack & differential screw jack. Basic 
+Structural Analysis of trusses, Method of Sections; Method of 
+Joints; Zero force members; Beams & types of beams (SF & 
+BMD); Frames & Machines.`
+    t4.textContent=`Virtual work and equilibrium:`
+    s4.textContent=`Virtual Work and Energy Method- Virtual displacements, 
+principle of virtual work for particle and ideal system of rigid 
+bodies. Conservative Forces, Potential-Energy Criterion for 
+Equilibrium, Stability of Equilibrium Configuration, 
+Applications of energy method for equilibrium. Stability of 
+equilibrium.`;
+    
+  
+}
+function draw(){
+    head.textContent="Engineering Drawing";
+    t1.textContent=`Introduction to Engineering drawing:`
+    s1.textContent=` (equipment, drafting 
+tools, symbols and conventions used in drawing),
+dimensioning, types of lines and their uses, section 
+representation, geometrical constructions of different types of 
+polygons and conic sections. 
+Introduction to projections (different quadrant systems), 
+projections on horizontal and vertical planes, principal views. 
+Concept of projection of points`;
+    t2.textContent=`Projection of lines:`
+    s2.textContent=`(inclined to single and both reference 
+planes). Projection of planes (inclined to single and both 
+reference planes). Concept of Traces
+13`
+
+    t3.textContent=`Projection of solids:`
+    s3.textContent=`(inclined to both reference planes), 
+Sections of solids.`
+    t4.textContent=`Development of surfaces:`
+    s4.textContent=`viz. Cones, Prisms, Pyramids and 
+Cylinders. Orthographic projections of simple blocks, 
+Isometric projections and Isometric views of different planes 
+and simple solids, Introduction to oblique and perspective 
+projections`;
+    
+  
+}
+
+/* Introduction to Engineering drawing (equipment, drafting 
+tools, symbols and conventions used in drawing),
+dimensioning, types of lines and their uses, section 
+representation, geometrical constructions of different types of 
+polygons and conic sections. 
+Introduction to projections (different quadrant systems), 
+projections on horizontal and vertical planes, principal views. 
+Concept of projection of points
+13
+II
+Projection of lines (inclined to single and both reference 
+planes). Projection of planes (inclined to single and both 
+reference planes). Concept of Traces
+13
+III
+Projection of solids (inclined to both reference planes), 
+Sections of solids. 13
+IV
+Development of surfaces viz. Cones, Prisms, Pyramids and 
+Cylinders. Orthographic projections of simple blocks, 
+Isometric projections and Isometric views of different planes 
+and simple solids, Introduction to oblique and perspective 
+projections*/
+
+
+</script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
