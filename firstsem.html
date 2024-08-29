@@ -31,6 +31,34 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="first.css">
+  
+  <style>.conti{
+    font-size: 1rem;
+}
+#timetable2 {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.144); /* Change to deep red color */
+}
+
+#timetable2 th, #timetable2 td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#timetable2 th {
+    background-color: #000000; /* Change to black color */
+    color: #ffffff; /* Change to white color */
+}
+
+.day {
+    text-align: center;
+    font-weight: bold;
+    background-color: #000000; /* Change to black color */
+    color: #ffffff; /* Change to white color */
+    padding: 8px;
+}</style>
 </head>
 
 <body>
@@ -52,7 +80,7 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle" src="picn (2).jpg" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
@@ -61,13 +89,12 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Semester</a>
-                   
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>First</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Second</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Third</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Fourth</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Fifth</a>
+                    <a href="index.html" class="nav-item nav-link active"><i class="bi bi-book-half me-2"></i>Semester</a>
+
+                    <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Second</a>
+                    <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Third</a>
+                    <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Fourth</a>
+                    <a href="#" class="nav-item nav-link"><i class="bi bi-earbuds me-2"></i>Fifth</a>
                   
                 </div>
             </nav>
@@ -114,11 +141,12 @@
                 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="picn (2).jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">Um Er</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">Contributors</a>
+                            <a href="#" class="dropdown-item">Umer Rafiq</a>
+                            <a href="#" class="dropdown-item">Hashim Khursheed</a>
                             <a href="#" class="dropdown-item">Join Discord</a>
                             
                         </div>
@@ -129,8 +157,42 @@
                     
            <div class="container" style="color: black;">
             <div class="card" id="first" style="font-size: small; font-weight: bold;color: wheat;margin: 10px 15px;background-color: transparent;">
-                <h1 style=" font-weight: bold;color: wheat;">First Semester <span style="font-size: smaller;margin-left: 70%;"><a href="#">papers</a> <hr></span></h1> 
-                <h2 style="font-size: small; font-weight: bold;color: wheat;">As a fresher this semester will help you to build a basic logic about computer science </h2>
+                <h1 style=" font-weight: bold;color: wheat;">First Semester <div></div><span style="font-size: 1.4rem;margin-left: .1%;"><a href="#syl">Papers</a>     <a href="#syll" style="margin-left: 4%;">Syllabus</a><hr></span></h1> 
+                <div class="conti">
+                  <h2 class="day" id="day1">Monday</h2> <!-- Add day at the top -->
+                  
+                  <table id="timetable2" class="red">
+                      <thead>
+                          <tr>
+                              <th scope="col">Subject</th>
+                              <th scope="col">Time</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td id="sub1">Math</td>
+                              <td id="t1">9:00 AM - 10:00 AM</td>
+                          </tr>
+                          <tr>
+                              <td id="sub2">Science</td>
+                              <td id="t2">10:00 AM - 11:00 AM</td>
+                          </tr>
+                          <tr>
+                              <td id="sub3">Science</td>
+                              <td id="t3">10:00 AM - 11:00 AM</td>
+                          </tr>
+                          <tr>
+                              <td id="sub4">Science</td>
+                              <td id="t4">10:00 AM - 11:00 AM</td>
+                          </tr>
+                          <tr>
+                              <td id="sub5">Science</td>
+                              <td id="t5">10:00 AM - 11:00 AM</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                      </tbody>
+                  </table>
+                  </div>
                 <br>
                 <h3>This semester comprises of six basic subjects:</h3>
                 </div>
@@ -138,34 +200,34 @@
                 <div class="container" id="c2" style="background: transparent;">
                     <a href="#book1">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                     <span >Maths</span>
+                     <span style="margin-top: 2.5rem;color: black;">Maths</span>
                     </div>
                     </a>
                 
                     <a href="#book2">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">  
-                        <span>EVS</span> 
+                        <span style="margin-top: 2.5rem;color: black;">EVS</span> 
                     </div>
                     </a>
                 
                     <a href="#book3">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span>Drawing</span>
+                       <span style="margin-top: 2.5rem;color: black;">Drawing</span>
                     </div>
                 </a>
                     <a href="#book4">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span>Electric</span>
+                       <span style="margin-top: 2.5rem;color: black;">Electric</span>
                     </div>
                 </a>
                     <a href="#book5">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span>Physics</span>
+                       <span style="margin-top: 2.5rem;color: black;">Physics</span>
                     </div>
                 </a>
                     <a href="#book6">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span  style="text-align: center;font-size: 14px;">Mechanics</span>
+                       <span  style="text-align: center;font-size: 15px;margin-top: 2.5rem;color: black;">Mechanics</span>
                     </div>
                 </a>
 
@@ -179,7 +241,7 @@
                     <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
                     <div class="row">
                      
-                      <div class="paste-button">
+                      <div class="paste-button" style="margin-top: 1.4rem;">
                         <button class="button">Unit &nbsp; ▼</button>
                         <div class="dropdown-content">
                           <a id="top" href="https://drive.google.com/file/d/1ZX1IN1ns8lZQdmCTCuWFGs6kkuARcyeG/view?usp=drivesdk">Matrices</a>
@@ -215,7 +277,7 @@
                         <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
                         <div class="row">
                          
-                          <div class="paste-button">
+                          <div class="paste-button" style="margin-top: 1.4rem;">
                             <button class="button">Unit &nbsp; ▼</button>
                             <div class="dropdown-content">
                               <a id="top" href="https://drive.google.com/file/d/1X2DE4EZXniacUlRANQyPmiLEAESi2FB4/view?usp=drivesdk">unit 1</a>
@@ -254,7 +316,7 @@
                         <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
                         <div class="row">
                          
-                          <div class="paste-button">
+                          <div class="paste-button" style="margin-top: 1.4rem;">
                             <button class="button">Unit &nbsp; ▼</button>
                             <div class="dropdown-content">
                               <a id="top" href="i">unit 1</a>
@@ -290,7 +352,7 @@
                         <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;border-right: 1px solid black;">
                         <div class="row">
                          
-                          <div class="paste-button">
+                          <div class="paste-button" style="margin-top: 1.4rem;">
                             <button class="button">Unit &nbsp; ▼</button>
                             <div class="dropdown-content">
                               <a id="top" href="i">unit 1</a>
@@ -380,7 +442,7 @@
                         </div> 
                        <br>
                             <a style="background-color: rgba(245, 222, 179, 0.196);"
-                           id="top" href="https://drive.google.com/file/d/1ZmFaEG99UY4JccCgWsfK_e2N3nP4raNM/view?usp=drivesdk">Mechanics intro(handwritten notes)</a>
+                           id="top" href="https://drive.google.com/file/d/1ZmFaEG99UY4JccCgWsfK_e2N3nP4raNM/view?usp=drivesdk">handwritten notes</a>
                            
                         
                     </div>
@@ -404,7 +466,7 @@
 
 <br>
 
-                <div style="color: white;">Syllabus:</div>
+                <div style="color: white;" id="syll">Syllabus:</div>
         <div class="container" id="c3">
             <div class="card" id="c4" onclick="math()">
               <p class="title">
@@ -725,7 +787,138 @@ Cylinders. Orthographic projections of simple blocks,
 Isometric projections and Isometric views of different planes 
 and simple solids, Introduction to oblique and perspective 
 projections*/
+const timetable2 = document.getElementById("timetable2");
+    const sub1 = document.getElementById("sub1");
+    const sub2 = document.getElementById("sub2");
+    const sub3 = document.getElementById("sub3");
+    const sub4 = document.getElementById("sub4");
+    const sub5 = document.getElementById("sub5");
+    const tt1 = document.getElementById("t1");
+    const tt2 = document.getElementById("t2");
+    const tt3 = document.getElementById("t3");
+    const tt4 = document.getElementById("t4");
+    const tt5 = document.getElementById("t5");
+    const dayElement = document.querySelector(".day");
 
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const startHour = 9;
+    const endHour = 17;
+    const interval = 60; // in minutes
+    
+    // Update the timetable every day at midnight
+    
+    const updateTimetable = setInterval(() => {
+        
+        const now = new Date();
+        
+        if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+            dayOfWeek++;
+            if (dayOfWeek > 6) {
+                dayOfWeek = 0;
+            }
+            if(dayOfWeek==4){
+                sub1.style.backgroundColor="yellow"
+                sub1.textContent="off";
+            }
+
+            // Set the day at the top
+          
+
+        }
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        dayElement.textContent = days[dayOfWeek]; // Set the subject and time for each row
+            switch (dayOfWeek) {
+                case 1:
+                  
+                    sub1.innerHTML="Engineering Drawing"
+                    tt1.innerHTML="09:30-11:20"
+                    sub2.innerHTML="Principles of Electrical Engineering Lab /(G-1/) Engineering Physics Lab (G-2)"
+                    tt2.innerHTML="11:20-01:00"
+                    sub3.innerHTML="Environmental Science"
+                    tt3.innerHTML="02:00-02:50"
+                    sub4.innerHTML="Engineering Physics"
+                    tt4.innerHTML="02:50-03:50"
+                    sub5.innerHTML="Engineering Mechanics"
+                    tt5.innerHTML="03:50-05:00"
+                    // Add more cases as needed
+                    break;
+                case 2:
+                  
+                    sub1.innerHTML="Principles of Electrical Engineering "
+                    tt1.innerHTML="09:30-11:20"
+                    sub2.innerHTML="Environmental Science"
+                    tt2.innerHTML="11:20-12:10"
+                    sub3.innerHTML="Engineering Mathematics-I"
+                    tt3.innerHTML="12:10-01:00"
+                    sub4.innerHTML="Engineering Drawing"
+                    tt4.innerHTML="02:00-03:50"
+                    sub5.innerHTML="Workshop Practice B"
+                    tt5.innerHTML="03:50-05:00"
+                    // Add more cases as needed
+                    break;
+                case 3:
+                  
+                    sub1.innerHTML="Engineering Mathematics-I"
+                    tt1.innerHTML="09:30-11:20"
+                    sub2.innerHTML="Principles of Electrical Engineering"
+                    tt2.innerHTML="11:20-12:10"
+                    sub3.innerHTML="Engineering Physics"
+                    tt3.innerHTML="12:10-01:00"
+                    sub4.innerHTML="Principles of Electrical Engineering Lab (G-2) Engineering Physics Lab (G-1)"
+                    tt4.innerHTML="02:00-03:50"
+                    sub5.innerHTML="Workshop Practice B"
+                    tt5.innerHTML="03:50-05:00"
+                    // Add more cases as needed
+                    break;
+                case 4:
+                  
+                    sub1.innerHTML="Engineering Mathematics-I"
+                    tt1.innerHTML="09:30-11:20"
+                    sub2.innerHTML="Principles of Electrical Engineering"
+                    tt2.innerHTML="11:20-12:10"
+                    sub3.innerHTML="Engineering Mechanics"
+                    tt3.innerHTML="12:10-01:00"
+                    sub4.innerHTML="Engineering Physics"
+                    tt4.innerHTML="02:00-02:50"
+                    sub5.innerHTML="Engineering Drawing"
+                    tt5.innerHTML="02:50-03:50"
+                    // Add more cases as needed
+                    break;
+                case 5:
+                  
+                    sub1.innerHTML="Environmental Science"
+                    tt1.innerHTML="09:30-11:20"
+                    sub2.innerHTML="Engineering Mechanics"
+                    tt2.innerHTML="11:20-01:00"
+                    sub3.innerHTML="Engineering Physics"
+                    tt3.innerHTML="02:00-03:50"
+                    sub4.innerHTML="Workshop Practice B"
+                    tt4.innerHTML="03:50-05:00"
+                    sub5.innerHTML="---"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 0:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                
+                
+                
+            
+        }
+    }, 100);
 
 </script>
 

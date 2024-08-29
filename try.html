@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .conti{
+            font-size: 3rem;
+        }
+        #timetable2 {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ff0000; /* Change to deep red color */
+        }
+
+        #timetable2 th, #timetable2 td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #timetable2 th {
+            background-color: #000000; /* Change to black color */
+            color: #ffffff; /* Change to white color */
+        }
+
+        .day {
+            text-align: center;
+            font-weight: bold;
+            background-color: #000000; /* Change to black color */
+            color: #ffffff; /* Change to white color */
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="conti">
+<h2 class="day" id="day1">Monday</h2> <!-- Add day at the top -->
+
+<table id="timetable2" class="red">
+    <thead>
+        <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="sub1">Math</td>
+            <td id="t1">9:00 AM - 10:00 AM</td>
+        </tr>
+        <tr>
+            <td id="sub2">Science</td>
+            <td id="t2">10:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td id="sub3">Science</td>
+            <td id="t3">10:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td id="sub4">Science</td>
+            <td id="t4">10:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td id="sub5">Science</td>
+            <td id="t5">10:00 AM - 11:00 AM</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+</div>
+<script>
+    const timetable2 = document.getElementById("timetable2");
+    const sub1 = document.getElementById("sub1");
+    const sub2 = document.getElementById("sub2");
+    const sub3 = document.getElementById("sub3");
+    const sub4 = document.getElementById("sub4");
+    const sub5 = document.getElementById("sub5");
+    const tt1 = document.getElementById("t1");
+    const tt2 = document.getElementById("t2");
+    const tt3 = document.getElementById("t3");
+    const tt4 = document.getElementById("t4");
+    const tt5 = document.getElementById("t5");
+    const dayElement = document.querySelector(".day");
+
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const startHour = 9;
+    const endHour = 17;
+    const interval = 60; // in minutes
+    
+    // Update the timetable every day at midnight
+    
+    const updateTimetable = setInterval(() => {
+        
+        const now = new Date();
+        
+        if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+            dayOfWeek++;
+            if (dayOfWeek > 6) {
+                dayOfWeek = 0;
+            }
+            if(dayOfWeek==4){
+                sub1.style.backgroundColor="yellow"
+                sub1.textContent="off";
+            }
+
+            // Set the day at the top
+          
+
+        }
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        dayElement.textContent = days[dayOfWeek]; // Set the subject and time for each row
+            switch (dayOfWeek) {
+                case 0:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 2:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 3:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 4:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="umer"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 5:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                case 0:
+                  
+                    sub1.innerHTML="off"
+                    tt1.innerHTML="---"
+                    sub2.innerHTML="off"
+                    tt2.innerHTML="---"
+                    sub3.innerHTML="off"
+                    tt3.innerHTML="---"
+                    sub4.innerHTML="off"
+                    tt4.innerHTML="---"
+                    sub5.innerHTML="off"
+                    tt5.innerHTML="---"
+                    // Add more cases as needed
+                    break;
+                
+                
+                
+            
+        }
+    }, 100);
+</script>
+
+</body>
+</html>
