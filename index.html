@@ -30,6 +30,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -146,6 +147,55 @@ If you’d like to know your current score, please reach out to us with your nam
       </div>
     </div>
   </div>
+  <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="background: transparent;">
+    <div class="modal-dialog" style="background: transparent;">
+      <div class="modal-content" style="background: rgba(0, 0, 0, 0.863);">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+        </div>
+        <div class="modal-body" style="background: transparent;color: rgba(255, 255, 255, 0.847);">
+          <div class="conti5">
+            <div class="calculator">
+              <input type="text" id="inputBox" placeholder="0" />
+              <div>
+                <button class="button operator">AC</button>
+                <button class="button operator">DEL</button>
+                <button class="button operator">%</button>
+                <button class="button operator">/</button>
+              </div>
+              <div>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button operator">*</button>
+              </div>
+              <div>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button operator">-</button>
+              </div>
+              <div>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button operator">+</button>
+              </div>
+      
+              <div>
+                <button class="button">00</button>
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button equalBtn">=</button>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+  </div>
 
 
     <div class="container-fluid position-relative d-flex p-0">
@@ -178,7 +228,7 @@ If you’d like to know your current score, please reach out to us with your nam
                                   <!--     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Semester</a> -->
                                  
                 
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-calculator me-2"></i>Calculator</a>
+                    <a href="#" class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#staticBackdrop7"><i class="fa fa-calculator me-2"></i>Calculator</a>
                     <a href="#todo" class="nav-item nav-link"><i class="bi bi-pencil-square me-2"></i>To-Do-List</a>
                     <a href="#" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><i class="bi bi-calendar me-2"></i>Calender</a>
                     <a href="#" class="nav-item nav-link"><i class="bi bi-list-check me-2"></i>Attendance</a>
@@ -467,7 +517,7 @@ If you’d like to know your current score, please reach out to us with your nam
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    <script src="script.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
