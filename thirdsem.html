@@ -90,9 +90,9 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="bi bi-book-half me-2"></i>Semester</a>
-
+                    <a href="firstsem.html" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>first</a>
                     <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Second</a>
-                    <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Third</a>
+
                     <a href="#" class="nav-item nav-link"><i class="bi bi-chevron-double-left me-2"></i>Fourth</a>
                     <a href="#" class="nav-item nav-link"><i class="bi bi-earbuds me-2"></i>Fifth</a>
                   
@@ -157,7 +157,7 @@
                     
            <div class="container" style="color: black;">
             <div class="card" id="first" style="font-size: small; font-weight: bold;color: wheat;margin: 10px 15px;background-color: transparent;">
-                <h1 style=" font-weight: bold;color: wheat;">First Semester <div></div><span style="font-size: 1.4rem;margin-left: .1%;"><a href="#syl">Papers</a>     <a href="#syll" style="margin-left: 4%;">Syllabus</a><hr></span></h1> 
+                <h1 style=" font-weight: bold;color: wheat;">Third Semester <div></div><span style="font-size: 1.4rem;margin-left: .1%;"><a href="#syl">Papers</a>     <a href="#syll" style="margin-left: 4%;">Syllabus</a><hr></span></h1> 
                 <div class="conti">
                   <h2 class="day" id="day1">Monday</h2> <!-- Add day at the top -->
                   
@@ -194,7 +194,7 @@
                   </table>
                   </div>
                 <br>
-                <h3>This semester comprises of six basic subjects:</h3>
+                <h3>Subjects:</h3>
                 </div>
 
                 <div class="container" id="c2" style="background: transparent;">
@@ -206,28 +206,28 @@
                 
                     <a href="#book2">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">  
-                        <span style="margin-top: 2.5rem;color: black;">EVS</span> 
+                        <span style="margin-top: 2.5rem;color: black;">Java</span> 
                     </div>
                     </a>
                 
                     <a href="#book3">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span style="margin-top: 2.5rem;color: black;">Drawing</span>
+                       <span style="margin-top: 2.5rem;color: black;">DBMS</span>
                     </div>
                 </a>
                     <a href="#book4">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span style="margin-top: 2.5rem;color: black;">Electric</span>
+                       <span style="margin-top: 2.5rem;color: black;">DSD</span>
                     </div>
                 </a>
                     <a href="#book5">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span style="margin-top: 2.5rem;color: black;">Physics</span>
+                       <span style="margin-top: 2.5rem;color: black;">SAS</span>
                     </div>
                 </a>
                     <a href="#book6">
                     <div class="card" id="card2" style="background-image: url(booko.jpg);background-position: center;background-size: cover;">
-                       <span  style="text-align: center;font-size: 15px;margin-top: 2.5rem;color: black;">Mechanics</span>
+                       <span  style="text-align: center;font-size: 15px;margin-top: 2.5rem;color: black;">Nothing</span>
                     </div>
                 </a>
 
@@ -470,33 +470,33 @@
         <div class="container" id="c3">
             <div class="card" id="c4" onclick="math()">
               <p class="title">
-               Math:
+               Math
               </p>
             </div>
             <div class="card" id="c4" onclick="evs()">
               <p class="title">
-               EVS
+               DBMS
               </p>
             </div>
             <div class="card" id="c4" onclick="draw()">
               <p class="title">
-               Drawing
+               CAD
               </p>
             </div>
           
             <div class="card" id="c4" onclick="elec()">
               <p class="title">
-             Electric
+             DSD
               </p>
             </div>
             <div class="card" id="c4" onclick="phy()">
               <p class="title">
-          
+          Java
               </p>
             </div>
             <div class="card" id="c4" onclick="mech()" style="justify-content:start ;">
               <p class="title" style="font-size: small;">
-            Mechanics
+           SAS
               </p>
             </div>
           </div>
@@ -535,212 +535,175 @@ var s4= document.querySelector("#s4");
 
 
 
-
-
-
 function math(){
     head.textContent="Mathematics";
-    t11.textContent=`Matrices:`
-    s1.textContent=`Symmetric and skew- symmetric, Hermitian, and 
-            skew-Hermitian Matrices, Orthogonal and Unitary matrices. 
-            Triangular matrices, Rank of a matrix, normal form, 
-            elementary transformations, solution of simultaneous 
-            equations by elementary operations, Cayley-Hamilton 
-            theorem, Eigen values and Eigen vectors of a matrix.`;
-    t2.textContent=`Multivariable Calculus:`
-    s2.textContent=`Differential calculus, Limits and 
-            continuity, partial derivatives of functions of severable 
-            variables, conditions for differentiability, The chain rule with 
-            one independent and with several independent variables, 
-            Implicit differentiation, Partial differentiation, homogeneous 
-            functions, and Euler's theorem.`
+    t1.textContent=`Relations::`
+    s1.textContent=` Sets, product sets, relations, representation of relations, composition of relations, partitions,
+equivalence relations.
+Counting & Combinatorics: Counting, Sum and product rule, Principle of Inclusion Exclusion. Pigeon
+Hole Principle, Counting by Bijections. Double Counting. Linear Recurrence relations - methods of
+solutions. Generating Functions. Permutations and counting.
+Ordered Sets and Lattices: Ordered sets, diagram of partially ordered sets, Supremum and Infimum,
+well-ordered sets, lattices, bounded and complemented lattice, and distributive lattice.`;
+    t2.textContent=`Proposition Calculus:`
+    s2.textContent=`Statements, basic operations, truth value of compound statements, algebra of
+propositions, tautologies and contradiction, conditional and bi-conditional statements, logical
+implications, logical equivalence, predicates, universal and existential quantifiers. Propositional logic for
+knowledge representation.`
 
-    t3.textContent=`Taylor's and Maclaurin's series:`
-    s3.textContent=`Taylor's theorem and mean 
-            value theorem for functions of two variables, Errors and 
-            approximations, Maxima & Minima of several variables: Local 
-            maximum and minimum values, critical points, saddle points, 
-            first and second derivative Tests.`
-    t4.textContent=`Probability:`
-    s4.textContent=`Basic concepts of probability, Addition 
-            multiplication theorems on probability, Conditional 
-            Probability, Bayes theorem, Random Variable, Probability 
-            density function, Discrete and continuous distributions, 
-            Binomial, Poisson & Normal distributions.`;
+    t3.textContent=`Graph Theroy:`
+    s3.textContent=`Graphs and multi-graphs, degree of a vertex, paths connectivity, cut points bridges,
+walks, paths, cycles, connected graphs, bipartite, regular, planar and connected graphs, components,
+Euler graphs, Euler's theorem, Hamiltonian path and circuits, graph coloring, chromatic number,
+isomorphism and homomorphism of graphs, Konigsberg seven bridge problem, shortest path.
+Applications of Graph theory in networking.
+Trees: Properties of trees, pendant vertices in trees, degree sequences in trees, necessary and sufficient
+conditions for a sequence to be a degree sequence of a tree.`
+    t4.textContent=`Group Theory:`
+    s4.textContent=` Groups, semi group, infinite group, finite group, order of a group, Abelian group,
+subgroup, necessary and sufficient condition for a subset to be a subgroup of a group, Lagrange's theorem,
+cosets, normal subgroups, order of an element of a group, cyclic group. Rings, homomorphism and
+isomorphism of rings.`;
     
    
 }
-//java
+
+
 function phy(){
-    head.textContent="Engineering Physics";
-    t1.textContent=`Vectors:`
-    s1.textContent=`cross product, Dot product and Scalar triple product 
-of vectors. Cartesian Coordinate System, Gradient, Divergence 
-and Curl in Cartesian coordinates. Curvilinear Coordinates, 
-Cylindrical and Spherical Polar Coordinates, Gradient, 
-Divergence and Curl in Curvilinear Coordinates. Vector fields, 
-Electric and magnetic fields. Dirac delta function, One 
-Dimensional and three-Dimensional Dirac Delta function and 
-its applications. Divergence of R^/R2 and its discrepancy and 
-solution.`;
-    t2.textContent=`Relativity::`
-    s2.textContent=`Concept of Ether and Michelson Morley 
-experiment, Inertial and non-inertial frame of references, 
-postulates of relativity, Galilean and Lorentz transformation 
-equations. Relativistic energy momentum relation, 
-Relativistic energy mass relation or Einstein’s energy-mass 
-relation, mass-less particles.`
+    head.textContent="Java";
+    t1.textContent=`Introduction to object-oriented programming,:`
+    s1.textContent=` Basics of java programming, features of java 
+programming, Data types, Variables, Operators, Control statements, Arrays in java, Basics of objects and 
+classes in java, Visibility modifiers, Methods, Constructors, Method overloading, Static members, Use
+of this reference.`;
+    t2.textContent=`Inheritance in java:`
+    s2.textContent=` Overriding, Use of super, Abstract class, Interfaces, Packages, Importing packages,
+Exception handling in java, Use of try, catch, finally, throw in exception handling. Multithreaded
+programming, Thread life cycle, Thread priorities, Thread synchronization.`
 
-    t3.textContent=`Quantum Mechanics:`
-    s3.textContent=`Compton Effect, De-Broglie wave 
-hypothesis, matter waves, Uncertainty principle and its 
-applications. Wave function and its properties. Schrodinger’s 
-wave equation: time dependent and time independent 
-Schrodinger’s wave equations, energy, momentum and 
-Hamiltonian operators.`
-    t4.textContent=`Solid State Physics:`
-    s4.textContent=`Band theory of solids (metals, insulators 
-and semi-conductors), Energy band gap, Direct and Indirect 
-band gap semiconductors, Intrinsic and Extrinsic 
-semiconductors, N-type and P-type semiconductors-Charge 
-carriers and charge carrier concentration, Fermi level and Fermi energy, Drift and Resistance, Conductivity and 
-Mobility-Effect of Temperature and Doping, Hall-Effect, 
-Diffusion of carriers, Diffusion length and Diffusion constantD. Einstein’s relation and Continuity equation.`;
+    t3.textContent=`Event handling in java:`
+    s3.textContent=` Event types, Mouse and key events, GUI Basics, Panels, Frames, Layout
+Managers: Flow Layout, Border Layout, Grid Layout, GUI components like Buttons, Check Boxes,
+Radio Buttons, Labels, Text Fields, Text Areas, Combo Boxes, Lists, Scroll Bars, Sliders, Windows,
+Menus, Dialog Box, Introduction to swing, Swing vs AWT, Hierarchy of swing components, Containers,
+JFrame, JApplet, JDialog, JPanel.`
+    t4.textContent=`Java Files:`
+    s4.textContent=`Java Files and I/O, Streams, I/O classes, Scanner class, Text and Binary I/O.
+Introduction to java collections, Collection classes, Array list, Tree list, Hash table, Enumeration, String
+tokenizer.
+JDBC introduction, JDBC drivers, connecting to database, querying a database.`;
     
    
 }
+/**/
 
-//dbms
+
+
+
+
 function evs(){
-    head.textContent="Environmental Science";
-    t1.textContent=`Environment and Atmosphere:`
-    s1.textContent=` Introduction, Segments of 
-Environment; Factors affecting Environment, Composition of 
-Atmosphere: particles, ions, radicals and their formation, 
-Vertical profile of atmosphere, Heat budget of earths 
-atmospheric system, Chemical and photochemical reactions in 
-atmosphere, photochemical smog formation; oxides of C, N, S 
-and their effects, Chemistry of Sun screens, ozone chemistry.
-Global effects of Air pollution: Greenhouse effect and 
-Greenhouse gases (Kyoto protocol), Global warming: causes, 
-impacts of global warming, Climate change, acid rain, ozone 
-layer depletion (Montreal Protocol).`;
-    t2.textContent=`Environment and Hydrosphere:`
-    s2.textContent=` Chemical composition of 
-water bodies: Lakes, ponds and rivers, factors determining 
-composition: Thermal stratification, acid – base and redox 
-property (pE concept), water quality parameters: Dissolved 
-oxygen, Metals, Chloride content, Phosphate, Nitrate and 
-Microorganisms, Water quality standards, Analytical methods 
-for determination of BOD, COD, DO and Metals (Ag, Cd, Hg, Pb 
-and Se), choice of method for determination`
+    head.textContent="Database Management Systems";
+    t1.textContent=`Introduction and Architecture:`
+    s1.textContent=`  The Role of Information Systems in Organizations, Overview of
+database management system, database system vs file system, database characteristics, database system
+concept and architecture, data independence.
+Data Modeling using the Entity Relationship (ER) Model: ER diagram design, Mapping constraints,
+keys, relationships. generalization, aggregation, Relational Database design Using ER-to-Relational
+Mapping.
+Relational Data Model and Language: Relational data model concepts, integrity constraints.
+Relational algebra: Operations and Queries.`;
+    t2.textContent=`SQL-a relational database language:`
+    s2.textContent=` DML, DDL and DCL. Schema definition in SQL, constraints,
+views, indexes, queries and sub-queries in SQL, triggers, cursors and stored procedures.
+Schema refinement: Normalization, functional dependency, reasoning about functional dependencies,
+Inference Rules, Equivalence, Minimal Cover, Finding candidate keys. Normal forms based on primary
+keys (1NF, 2NF, 3NF & BCNF), lossless join and dependency preserving decomposition, multivalued
+functional dependencies.`
 
-    t3.textContent=`Water and its Treatment:`
-    s3.textContent=` Hard water, Types of hardness, 
-units of hardness, methods of estimation, Treatment of hard 
-water/softening of hard water; Lime-Soda process, Zeolite 
-process and Ion Exchange process, Alkalinity of water, 
-determination of alkalinity by using Double indicator method 
-(phenolphthalein and methyl orange indicators), numerical 
-problems based on hardness, alkalinity and LS process, 
-municipal treatment of water for drinking purposes; removal of 
-suspended,dissolved and biological impurities-sterilization 
-by chlorination (Effective and break-point chlorination).`
-    t4.textContent=`Sustainable Development & Environmental Management:`
-    s4.textContent=`Energy and Environment: Energy sources – overview of 
-resources and reserves.
-Social and economic issues: Poverty, NC Saxena Panel, 
-Tendulkar Committee, Food security, food security in India, 
-challenges to food security, Sustainable Development: 
-Definition and concepts of sustainable development, 
-International initiatives towards Sustainable development, 
-Sustainable development goals; Hurdles to sustainability.
-Environmental Management Systems: ISO14000 series; 
-Environmental auditing: Environmental Impact Assessment, 
-Life cycle assessment; Human health risk assessment, issues 
-involved in enforcement of environmental legislations
-Solid waste Management: Causes, effects and control 
-measures of urban and industrial wastes. Disaster 
-management: Floods, earthquake, cyclone and landslides`;
+    t3.textContent=`Transaction Management:`
+    s3.textContent=`Transaction concept and state, implementation of atomicity, isolation and
+durability, concurrent executions, serializability of schedules.
+Concurrency and Recovery Control: Techniques, Lock based protocols, Timestamp based Protocols, 
+Deadlock and deadlock handling.
+Recovery: Recovery system, failure classification, storage structure, recovery and atomicity, log based
+recovery.`
+    t4.textContent=`Physical storage structures:`
+    s4.textContent=` Data on External Storage, File Organization and Indexing, Cluster
+Indexes, Primary and Secondary Indexes, Index data Structures, Hash Based Indexing, Tree base
+Indexing, Comparison of File Organizations, B+ Trees: A Dynamic Index Structure
+Introduction to NoSQL databases.`;
     
    
 }
+
+
+//dsd
 function elec(){
-    head.textContent="Principles of Electrical Engineering";
-    t1.textContent=`Basics of Electrical Circuits:`
-    s1.textContent=`Review of electric circuit 
-concepts & parameters: Voltage, Current, Electric Potential, 
-Resistance, Conductance, Inductance, Capacitance, Reactance, 
-Impedance. Basic terminologies: Nodes, Junctions, Paths, 
-Loops, Branches. Series and Parallel combinations of circuits 
-parameters. Voltage and Current sources and their 
-transformation. Independent & Dependent Sources. Power 
-and energy relations. Ohm's law & its Validity, Ohmic and non 
-Ohmic conductors.
-DC Circuits: Introduction to D.C. Circuits, Voltage and Current 
-Divider Laws, Kirchhoff’s laws (KCL & KVL), Basic analysis of 
-Electrical Circuits. Derivation of Current & Voltage in an 
-Electrical Circuit.`;
-    t2.textContent=`AC Circuits:`
-    s2.textContent=`Introduction to A.C. circuits, Basic terminology 
-and definitions, Parameters, Generation of A.C. Voltage, 
-Applications. Terminologies: EMF, Mean, Average, RMS, Peak, 
-and Form Factor etc. A.C. to D.C. and D.C. to A.C. Conversion, 
-Concept of Single Phase and Three Phase Circuits. Concept 
-about Electricity distribution`
+    head.textContent="Digital Systems Design:";
+    t1.textContent=`Number system and Codes:`
+    s1.textContent=` Binary, Octal, Hexadecimal number systems and their interconversion, Binary Arithmetic, BCD codes, 8421 code, Excess-3 code, Gray code, error detection
+and correction- Hamming code.
+Logic Gates and Boolean Algebra: Basic theorems and properties of Boolean algebra, Boolean
+functions, Canonical and Standard forms of Boolean expressions, Digital logic gates.
+Boolean Function Simplification: The Karnaugh map (K-map) method, Quine McCluskey tabulation
+method.`;
+    t2.textContent=`Combinational circuits:`
+    s2.textContent=`Combinational circuit design, design of half adder/subtractor, full
+adder/subtractor.
+Design of Encoders and Decoders: Priority encoders, BCD to decimal decoder, BCD to seven
+segment display decoder, design of Multiplexers (MUX).
+Semiconductor Memories: Introduction, memory organization, sequential memories, content
+addressable memories, design of memory modules.`
 
-    t3.textContent=`Magnetic Circuits:`
-    s3.textContent=`Magnetic Circuits: Basic terminologies: MMF, Reluctance, 
-Permeance, Magnetic field and permeability, Self and Mutual 
-Inductance, leakage flux. Faraday’s laws of electromagnetic 
-induction, Lenz’s law. Analogy between electric circuit and 
-magnetic circuits, Analysis of series and parallel magnetic 
-circuit, B-H curve, Hysteresis & Eddy current loss.
-Electrical Machines: Introduction to Machinery Principles, 
-Electrical and Mechanical Terminologies associated with 
-Electrical Machines.
-Types of Electrical Machines: Transformers, A.C. and D.C. 
-Generators & Motors. Basic Concepts & Principle of Operation, 
-Losses in Electrical Machines.`
-    t4.textContent=`Electrical Measurement:`
-    s4.textContent=`Introduction to Electrical 
-Measurement & Measuring Instruments. Measurement 
-Errors, Ammeter, Voltmeter, Wattmeter, Energy Meter.`;
+    t3.textContent=`Sequential circuit design:`
+    s3.textContent=`Flip Flop and its types, Flip-Flop characteristic and excitation tables,
+Conversion of flip flops.
+Counters and Registers: Design of shift registers, universal shift register, and design of asynchronous
+counters: Ripple counters, Mod (N) counters, Design of various Synchronous counters: state diagrams 
+and truth tables.`
+    t4.textContent=`VHDL::`
+    s4.textContent=`Introduction to VHDL terms, Object types, Data types, Operators. Design units in VHDL, Sub
+programs and Packages, Libraries, IEEE Standard logic, Concurrent Statements, Sequential Statements.
+Compilation and Simulation of VHDL Code System Design using VHDL. Realization of simple
+combinational and sequential circuits using VHDL (Adder, Subtractor, Multiplexer, Counters)`;
     
    
 }
+//sas
 
 function mech(){
-    head.textContent="Engineering Mechanics";
-    t1.textContent=`Basics:`
-    s1.textContent=`Basic concepts of Vectors, System of Forces, 
-CoplanarConcurrent Forces, rigid body equations, 
-Components in Space – Resultant- Moment of Forces and its 
-Application; Moment about a specific axis, Equilibrium of 
-System of Forces, Free body diagrams, simplification of force 
-moment system. Centroid and Centre of Gravity, Centroid of 
-simple figures and centroid of composite sections`;
-    t2.textContent=`Moment of Inertia:`
-    s2.textContent=`Area moment of 
-inertia, Theorems of moment of inertia, Moment of inertia of 
-standard sections and composite sections; Mass moment 
-inertia of solids, product of inertia. Friction, Types of friction,`
+    head.textContent="Signals and Systems";
+    t1.textContent=`Introduction to Signals:`
+    s1.textContent=` Classification of signals-deterministic, non-deterministic, periodic, aperiodic,
+even, odd signals, energy, power elementary, exponential, sinusoidal, impulse, step, ramp, pulse, square
+wave signals.
+Basic operations on Signals: Time shifting. time scaling, time inversions of signals.
+Basic properties of System: causality, time invariance, Stability, linearity, memory, order of system,
+interconnection of systems.
+LTI Systems: Linear time invariant systems, characterization, unit impulse response, convolution,
+properties of LTI systems.`;
+    t2.textContent=`Fourier analysis of signals and system: `
+    s2.textContent=`Fourier series of periodic signals and its properties, Fourier
+transform of aperiodic signals and its properties, Fourier transform of periodic signals, convolution in time 
+and frequency domain , energy and signals, Parseval’s theorem energy spectral density and its properties,
+Transfer function of LTI system.
+Laplace Transform: Relation between Laplace and Fourier transforms, region of convergence, properties 
+of Laplace transform. initial and final value theoren1s. convolution, transfer function of LTI system,
+concept of poles and zeroes, stability criteria.`
 
-    t3.textContent=`Trusses and beams:`
-    s3.textContent=`Analysis of screw jack & differential screw jack. Basic 
-Structural Analysis of trusses, Method of Sections; Method of 
-Joints; Zero force members; Beams & types of beams (SF & 
-BMD); Frames & Machines.`
-    t4.textContent=`Virtual work and equilibrium:`
-    s4.textContent=`Virtual Work and Energy Method- Virtual displacements, 
-principle of virtual work for particle and ideal system of rigid 
-bodies. Conservative Forces, Potential-Energy Criterion for 
-Equilibrium, Stability of Equilibrium Configuration, 
-Applications of energy method for equilibrium. Stability of 
-equilibrium.`;
+    t3.textContent=`Random Variable Theory and Random Signals: `
+    s3.textContent=`Probability, conditional probability, statistical
+independence, random variables, discrete and continuous random variables, probability distribution and
+probability density functions, statistical averages of random variables, some important density functions.`
+    t4.textContent=`Random processes and Characterization:`
+    s4.textContent=` Ensemble and time averages, stationary and non-stationary
+random process, wide sense stationary random process, autocorrelation and cross correlation functions.
+Response of LTI systems to random inputs.
+Noise: Noise and its types, white noise, signal to noise ratio of LTI systems.`;
     
   
 }
+
 function draw(){
     head.textContent="Engineering Drawing";
     t1.textContent=`Introduction to Engineering drawing:`
@@ -771,7 +734,29 @@ projections`;
   
 }
 
-
+/* Introduction to Engineering drawing (equipment, drafting 
+tools, symbols and conventions used in drawing),
+dimensioning, types of lines and their uses, section 
+representation, geometrical constructions of different types of 
+polygons and conic sections. 
+Introduction to projections (different quadrant systems), 
+projections on horizontal and vertical planes, principal views. 
+Concept of projection of points
+13
+II
+Projection of lines (inclined to single and both reference 
+planes). Projection of planes (inclined to single and both 
+reference planes). Concept of Traces
+13
+III
+Projection of solids (inclined to both reference planes), 
+Sections of solids. 13
+IV
+Development of surfaces viz. Cones, Prisms, Pyramids and 
+Cylinders. Orthographic projections of simple blocks, 
+Isometric projections and Isometric views of different planes 
+and simple solids, Introduction to oblique and perspective 
+projections*/
 const timetable2 = document.getElementById("timetable2");
     const sub1 = document.getElementById("sub1");
     const sub2 = document.getElementById("sub2");
@@ -816,69 +801,84 @@ const timetable2 = document.getElementById("timetable2");
             switch (dayOfWeek) {
                 case 1:
                   
-                    sub1.innerHTML="Engineering Drawing"
+
+                    sub1.innerHTML="OOPS using Java"
                     tt1.innerHTML="09:30-11:20"
-                    sub2.innerHTML="Principles of Electrical Engineering Lab /(G-1/) Engineering Physics Lab (G-2)"
+                    sub2.innerHTML="Database Management Systems Lab (G1+G2)"
                     tt2.innerHTML="11:20-01:00"
-                    sub3.innerHTML="Environmental Science"
+                    sub3.innerHTML="Discrete Mathematical Structures"
                     tt3.innerHTML="02:00-02:50"
-                    sub4.innerHTML="Engineering Physics"
-                    tt4.innerHTML="02:50-03:50"
-                    sub5.innerHTML="Engineering Mechanics"
-                    tt5.innerHTML="03:50-05:00"
+                    sub4.innerHTML="Signals and Systems"
+                    tt4.innerHTML="02:50-05:00"
+                    sub5.innerHTML="--"
+                    tt5.innerHTML="--"
                     // Add more cases as needed
                     break;
                 case 2:
                   
-                    sub1.innerHTML="Principles of Electrical Engineering "
+                    sub1.innerHTML="Discrete Mathematical Structures"
                     tt1.innerHTML="09:30-11:20"
-                    sub2.innerHTML="Environmental Science"
+                    sub2.innerHTML="Database Management Systems"
                     tt2.innerHTML="11:20-12:10"
-                    sub3.innerHTML="Engineering Mathematics-I"
+                    sub3.innerHTML="Signals and Systems "
                     tt3.innerHTML="12:10-01:00"
-                    sub4.innerHTML="Engineering Drawing"
+                    sub4.innerHTML="Digital System Design Lab (G1) ECE30420L Database Management Systems Lab (G2) CSE30320L"
                     tt4.innerHTML="02:00-03:50"
-                    sub5.innerHTML="Workshop Practice B"
+                    sub5.innerHTML="Additional Lab"
                     tt5.innerHTML="03:50-05:00"
                     // Add more cases as needed
                     break;
+
+                   
+
                 case 3:
                   
-                    sub1.innerHTML="Engineering Mathematics-I"
+                    sub1.innerHTML="Database Management Systems"
                     tt1.innerHTML="09:30-11:20"
-                    sub2.innerHTML="Principles of Electrical Engineering"
-                    tt2.innerHTML="11:20-12:10"
-                    sub3.innerHTML="Engineering Physics"
-                    tt3.innerHTML="12:10-01:00"
-                    sub4.innerHTML="Principles of Electrical Engineering Lab (G-2) Engineering Physics Lab (G-1)"
-                    tt4.innerHTML="02:00-03:50"
-                    sub5.innerHTML="Workshop Practice B"
-                    tt5.innerHTML="03:50-05:00"
+                    sub2.innerHTML="OOPS using Java Lab (G1+G2) "
+                    tt2.innerHTML="11:20-01:00"
+                    sub3.innerHTML="Database Management Systems Lab (G1) CSE30320L OOPS using Java Lab (G2) CSE30220L"
+                    tt3.innerHTML="02:00-03:50"
+                    sub4.innerHTML="Extra Class"
+                    tt4.innerHTML="03:50-05:00"
+                    sub5.innerHTML="--"
+                    tt5.innerHTML="--"
                     // Add more cases as needed
                     break;
+
+
+                     
                 case 4:
                   
-                    sub1.innerHTML="Engineering Mathematics-I"
+                    sub1.innerHTML="Digital System Design "
                     tt1.innerHTML="09:30-11:20"
-                    sub2.innerHTML="Principles of Electrical Engineering"
+                    sub2.innerHTML="OOPS using Java "
                     tt2.innerHTML="11:20-12:10"
-                    sub3.innerHTML="Engineering Mechanics"
+                     sub3.innerHTML="Discrete Mathematical Structures"
+                   
                     tt3.innerHTML="12:10-01:00"
-                    sub4.innerHTML="Engineering Physics"
+                     sub4.innerHTML="Signals and Systems"
                     tt4.innerHTML="02:00-02:50"
-                    sub5.innerHTML="Engineering Drawing"
+                     sub5.innerHTML="Database Management "
                     tt5.innerHTML="02:50-03:50"
                     // Add more cases as needed
                     break;
+
+                    /*Discrete Mathematical Structures
+(MTH30120)
+Digital System Design 
+(ECE30420)
+OOPS using Java Lab (G1) CSE30220L 
+Digital System Design Lab (G2) ECE30420L Additional Lab*/
                 case 5:
                   
-                    sub1.innerHTML="Environmental Science"
+                    sub1.innerHTML="Discrete Mathematical Structures"
                     tt1.innerHTML="09:30-11:20"
-                    sub2.innerHTML="Engineering Mechanics"
+                    sub2.innerHTML="Digital System Design "
                     tt2.innerHTML="11:20-01:00"
-                    sub3.innerHTML="Engineering Physics"
+                    sub3.innerHTML="OOPS using Java Lab (G1) CSE30220L Digital System Design Lab (G2) ECE30420L Additional Lab"
                     tt3.innerHTML="02:00-03:50"
-                    sub4.innerHTML="Workshop Practice B"
+                    sub4.innerHTML="Additional Lab"
                     tt4.innerHTML="03:50-05:00"
                     sub5.innerHTML="---"
                     tt5.innerHTML="---"
